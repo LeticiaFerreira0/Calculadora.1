@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="C:\Users\letic\OneDrive\Documentos\Projeto I Love You\Calculadora\stylesheet.css">
+	<script async src="C:\Users\letic\OneDrive\Documentos\Projeto I Love You\Calculadora\Calculadora.js"></script>
+	<link id="/favicon images" href="C:\Users\letic\OneDrive\Documentos\Projeto I Love You\Calculadora\favicon (1).ico" rel="icon" type="favicon.ico">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Calculadora</h1></div>
+		<div class="calculadora">
+        <h1>Calculadora</h1>
+        <table>
+        <tr>
+      <form name="calculator" >
+                <input type="textfield" id="resultado" name="ans" value="">
+                <td><input type="reset" class="button" value="Reset"></td></form>
+                <td><button class="button" value="<" onclick="document.calculator.ans.value+='<'"><</button></td>
+                <td><button class="button" value="/" onclick="document.calculator.ans.value+='/'">/</button></td>
+                <td><button class="button" value="*" onclick="document.calculator.ans.value+='*'">X</button></td>
+            </tr>
+            <tr>
+                <td><button class="button" value="7" onclick="document.calculator.ans.value+='7'">7</button></td>
+                <td><button class="button" value="8" onclick="document.calculator.ans.value+='8'">8</button></td>
+                <td><button class="button" value="9" onclick="document.calculator.ans.value+='9'">9</button></td>
+                <td><button class="button" value="-" onclick="document.calculator.ans.value+='-'">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="button" value="4" onclick="document.calculator.ans.value+='4'">4</button></td>
+                <td><button class="button" value="5" onclick="document.calculator.ans.value+='5'">5</button></td>
+                <td><button class="button" value="6" onclick="document.calculator.ans.value+='6'">6</button></td>
+                <td><button class="button" value="+" onclick="document.calculator.ans.value+='+'">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="button" value="1" onclick="document.calculator.ans.value+='1'">1</button></td>
+                <td><button class="button" value="2" onclick="document.calculator.ans.value+='2'">2</button></td>
+                <td><button class="button" value="3" onclick="document.calculator.ans.value+='3'">3</button></td>
+                <td rowspan="2" ><button class="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)" style="height: 106px;">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="button" value="0" onClick="document.calculator.ans.value+='0'" style="width:106px;">0</button></td>
+                <td><button class="button" value="." onClick="document.calculator.ans.value+='.'" >.</button></td>
+            </tr>
+        </table>    
+    </div>
+</body>                         
+</html>
